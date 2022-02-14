@@ -1,0 +1,326 @@
+/* background color : #201e2b;
+cards color : #2c2c44;
+headings(pink):#fe5d84;*/
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #201e2b;
+	box-sizing: border-box;
+	overflow-x: hidden;
+	background-image: url('./static/images/bg-stars.svg');
+}
+#firstSectionContent{
+	color: #fe5d84;
+	flex-grow: 1;
+	text-align: center;
+	font-size: 1.2rem;
+}
+.firstSectionSpace{
+	flex-grow: 1;
+}
+#firstSectionParent{
+	display: flex;
+	flex-direction: row;
+	padding: 5%;
+	justify-content: center;
+	align-items: center;
+	background-image: url('./static/images/pattern-hills.svg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+#firstSectionImage{
+	width: 10vw;
+	flex-grow: 1;
+	border-radius: 30px;
+}
+
+
+/*Mobile*/
+@media only screen and (max-width: 700px){
+	#firstSectionParent{
+		display: flex;
+		flex-direction: column;
+		padding: 5%;
+		justify-content: center;
+		align-items: center;
+	}
+	#firstSectionImage{
+		width: 20vw;
+		flex-grow: 1;
+	}
+}
+
+
+/* Second section styles */
+#secondSectionParent{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10%;
+}
+.secondSectionSpace{
+	flex-grow: 1;
+}
+#secondSectionLevel{
+	flex-grow: 1;
+}
+#secondSectionSchool{
+	flex-grow: 1;
+}
+#level-1{
+	text-align: center;
+	font-size: 1rem;
+	color: #fe5d84;
+	/*background: #2c2c44;*/
+	padding: 3%;
+	/*box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);*/
+}
+#secondSectionSchool{
+	text-align: center;
+	font-size: 1rem;
+	color: #fe5d84;
+	/*background: #2c2c44;*/
+	padding: 1%;
+	/*box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);*/
+	flex-grow: 1;
+}
+/*Mobile*/
+@media only screen and (max-width: 700px){
+	#secondSectionParent{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	#level-1{
+		margin-bottom: 5%;
+	}
+	.secondSectionSpace{
+		flex-grow: 1;
+	}
+	#secondSectionLevel{
+		flex-grow: 1;
+	}
+	#secondSectionSchool{
+		flex-grow: 1;
+	}
+}
+
+
+/* Container around content */
+/*
+.timeline{
+	margin-top: 8%;
+}
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+.content h2{
+	color: white;
+	font-size: 2rem;
+}
+.content p{
+	color: #fe5d84;
+	font-size: 1rem;
+}
+/* The circles on the timeline */
+/*
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left 
+.left {
+  left: 0;
+}
+
+/* Place the container to the right 
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+/*
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) 
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side 
+.right::after {
+  left: -16px;
+}
+
+/* The actual content 
+.content {
+  padding: 3%;
+  background-color: #2c2c44;
+  position: relative;
+  border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide 
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left 
+  .timeline::after {
+  left: 31px;
+  }
+  
+  /* Full-width containers 
+  .container {
+  width: 80%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards 
+  .container::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot 
+  .left::after, .right::after {
+  left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones 
+  .right {
+  left: 0%;
+  }
+}*/
+
+
+#thirdSectionContainer{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+#thirdSectionSpace{
+	flex-grow: 1;
+}
+
+.main-container{
+    position: relative;
+    width: 50%;
+    flex-grow: 1;
+}
+/*creating line for timeline*/
+/*
+.main-container::after{
+    content: '';
+    position: absolute;
+    width: 10px;
+    background-color: #FFC0CB;
+    top:0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}*/
+/*Adjusting box of all content*/
+.text-wrapper{
+    padding: 10px 40px;
+    position: relative;
+    width:51%;
+    box-sizing: border-box;
+    margin: 50px 0;
+}
+.text-wrapper::after{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 25px;
+    right: -10px;
+    background-color: white;
+    /*background-color:#FF69B4;*/
+     border: 4px solid #FF9F55;
+    top:15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+/*for left events*/
+.left{
+    left: 0;
+}
+/*for right events*/
+.right{
+    left:50%;
+}
+.right::after{
+    left:-10px;
+}
+/*content box colour padding 
+and radius for circular corner*/
+.content{
+    padding: 15px 15px 15px 17px;
+    /*background-color: #FFC0CB;*/
+    background-color: #2c2c44;
+    border-radius: 4px;
+}
+/*setting text property of event heading*/
+.content h3{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: white;
+    letter-spacing:1px;
+}
+/*setting text property of event content*/
+.content p{
+    color: #fe5d84;;
+    font-weight: 300;
+    font-size: 18px;
+    margin-top: 2px;
+}
+
+
+/*footer*/
+footer{
+	background-image: url('./static/images/pattern-hills.svg');
+	position: absolute;
+}
+.bottom-container{
+	align-items: center;
+	color: white;
+}
+.bottom-container a{
+	color: white;
+}
